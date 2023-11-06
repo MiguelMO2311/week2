@@ -1,19 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Contacts = void 0;
-var person_1 = require("./person");
 var Contacts = /** @class */ (function () {
     function Contacts() {
         this.people = [];
-        this.people = [];
     }
     Contacts.prototype.printCalendar = function () {
-        var agenda = this.people.push();
-        console.log(agenda);
+        for (var i = 0; i < this.people.length; i++)
+            console.log(this.people[i]);
     };
     return Contacts;
 }());
 exports.Contacts = Contacts;
-var people1 = new person_1.Person('Maria', 30, 'Pza. España 20 Madrid');
-console.log(people1.name);
-console.log(people1.getAdrress());
+// let people1 = new Person ('Maria', 30, 'Pza. España 20 Madrid');
+// let people2 = new Person ('Santiago', 22, 'Pza. Mayor 74 Leganes');
+// console.log (people1.name)
+// console.log (people1.getAdrress())
+// console.log (people2.name)
+// console.log (people2.yearOfBirth())

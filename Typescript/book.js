@@ -41,17 +41,13 @@ var Book = /** @class */ (function () {
         this.nPages = nPages;
     };
     Book.prototype.toString = function () {
-        for (var i = 0; i < Book.length; i++) {
-            return ("Title - ".concat(this.title, " \nNumbers of Pages - ").concat(this.nPages, "\nISBN - ").concat(this.isbn, "\nAuthor - ").concat(this.author, "\nEditorial - ").concat(this.editorial));
-        }
+        return ("Title - ".concat(this.title, " \nNumbers of Pages - ").concat(this.nPages, "\nISBN - ").concat(this.isbn, "\nAuthor - ").concat(this.author, "\nEditorial - ").concat(this.editorial));
     };
     return Book;
 }());
 exports.Book = Book;
-// let myBook = new Book ('Relato de un Naufrago', 176, '9788490323762','Gabriel García Márquez', 'Debolsillo')
-// // // myBook.setTitle ('Cien años de soledad');
-// // // console.log(myBook.getAuthor);
-// // // console.log(myBook.toString);
-// // myBook.setTitle('Coco');
-// // console.log(myBook.getAuthor());
+// let myBook = new Book('Relato de un Naufrago', 176, '9788490323762', 'Gabriel García Márquez', 'Debolsillo')
+// console.log(myBook.toString());
+// myBook.setTitle('Coco');
+// console.log(myBook.getAuthor());
 // console.log(myBook.toString());

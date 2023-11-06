@@ -30,9 +30,9 @@
 
 
 }
-// const Person1 = new Person('Maria', 30, 'Pza. España 20 Madrid');
+const Person1 = new Person('Maria', 30, 'Pza. España 20 Madrid');
 
-// console.log(Person1)
-// console.log(Person1.printName())
-// console.log(Person1.yearOfBirth())
+console.log(Person1)
+console.log(Person1.printName())
+console.log(Person1.yearOfBirth())
 

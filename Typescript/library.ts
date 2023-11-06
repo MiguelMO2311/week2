@@ -1,10 +1,12 @@
 // Reto 6 toString.
+import { AnyNaptrRecord } from "dns";
 import { Book } from "./book";
 
 export class Library {
     private books: Book[];
     private address: string;
     private manager: string;
+
     constructor(books: Book[], address: string, manager: string) {
         this.books = books;
         this.address = address;
@@ -19,31 +21,25 @@ export class Library {
     public getManager(): string {
         return this.manager;
     }
-    public toString() {
-        for (let i = 0; i < Book.length; i++) {
-            return (`
-"Title - ${Book[0]} 
-Numbers of Pages - ${Book[1]}
-ISBN - ${Book[2]} 
-Author - ${Book[3]}
-Editorial - ${Book[4]}`)
-        }
-    } ç
-getNumberOfBooks(): number {
-        return Book.length
+    public toString(): void {
+        for (let i = 0; i < this.books.length; i++)
+            console.log(this.books[i]);
     }
-findByAuthor(getAuthor: string) {
-    const result = this.books.filter((book) => getAuthor = 'Gabriel');    
-    return result;
-      
+    public getNumberOfBooks(): number {
+        return this.books.length
     }
-
+    public findByAuthor(author: string):Book[] {
+        const result = this.books.filter((book) => book.getAuthor() == author);    
+        return result;
 }
 
-let book1 = new Library([], 'calle Pez 7 Madrid', 'Pepito Grillo')
- 
-// console.log(book1.toString());
-// console.log (book1.getNumberOfBooks());
-// console.log (book1.findByAuthor('John'));
+}
+// let book1 = new Book('Relato de un Naufrago', 176, '9788490323762', 'Gabriel García Márquez', 'Debolsillo');
+// let book2 = new Book('Cien años de soledad', 496, '9788497592208', 'Pepe García Márquez', 'Debolsillo')
+// let library1 = new Library([book1, book2], 'calle Pez 7 Madrid', 'Pepito Grillo')
+
+// console.log(library1.toString());
+// console.log(library1.getNumberOfBooks());
+// console.log (library1.findByAuthor('Gabriel García Márquez'));
 
 
