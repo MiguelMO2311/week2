@@ -1,8 +1,10 @@
 import { Contacts } from "./contacts";
 import { Person } from "./person";
 
-let people2 = new Person ('Pepe', 40, 'Pza. España 10 Madrid');
+let people1 = new Person ('Maria', 30, 'Pza. España 20 Madrid');
+let people2 = new Person ('Santiago', 22, 'Pza. Mayor 74 Leganes');
 
-console.log (people2.printName());
-console.log (people2.age);
-
+console.log (people1.name)
+console.log (people1.getAdrress())
+console.log (people2.name)
+console.log (people2.yearOfBirth())

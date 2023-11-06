@@ -24,7 +24,7 @@ var Person = /** @class */ (function () {
     return Person;
 }());
 exports.Person = Person;
-// const Person1 = new Person('Maria', 30, 'Pza. España 20 Madrid');
-// console.log(Person1)
-// console.log(Person1.printName())
-// console.log(Person1.yearOfBirth())
+var Person1 = new Person('Maria', 30, 'Pza. España 20 Madrid');
+console.log(Person1);
+console.log(Person1.printName());
+console.log(Person1.yearOfBirth());
