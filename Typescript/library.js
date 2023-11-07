@@ -1,4 +1,5 @@
 "use strict";
+// Reto 6 toString.
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Library = void 0;
 var Library = /** @class */ (function () {
@@ -17,8 +18,10 @@ var Library = /** @class */ (function () {
         return this.manager;
     };
     Library.prototype.toString = function () {
+        var aux = "";
         for (var i = 0; i < this.books.length; i++)
-            console.log(this.books[i]);
+            aux = this.books[i].toString();
+        return (aux);
     };
     Library.prototype.getNumberOfBooks = function () {
         return this.books.length;
