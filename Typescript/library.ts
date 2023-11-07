@@ -1,5 +1,5 @@
 // Reto 6 toString.
-import { AnyNaptrRecord } from "dns";
+
 import { Book } from "./book";
 
 export class Library {
@@ -21,10 +21,13 @@ export class Library {
     public getManager(): string {
         return this.manager;
     }
-    public toString(): void {
+    public toString(): string{
+        let aux= ""
         for (let i = 0; i < this.books.length; i++)
-            console.log(this.books[i]);
-    }
+        aux =this.books[i].toString()
+        return(aux);
+                }
+            
     public getNumberOfBooks(): number {
         return this.books.length
     }

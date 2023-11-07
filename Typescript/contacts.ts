@@ -1,4 +1,6 @@
 import { Person } from "./person";
+import { Book } from "./book";
+
 export class Contacts {
 
 public people:Person[];
